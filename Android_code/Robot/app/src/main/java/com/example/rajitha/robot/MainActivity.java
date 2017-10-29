@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
                 apManager.getDetail(MainActivity.this);
 
-                //apManager.configureSSID(MainActivity.this);
+                apManager.configureSSID(MainActivity.this);
 
                 final Dialog dialog=new Dialog(this);
                 dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -374,7 +374,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.show();
     }
-    String mac_address="a0:20:a6:02:97:72";
+    String mac_address="11:22:33:44:55:66"; //enter your device mac address here 
     public boolean is_connected(String mac_address){
         ArrayList<String> mac = apManager.getConnectedDevicesMac();
         boolean connected=false;
